@@ -297,6 +297,7 @@ class RetrieveUserProxyAgent(UserProxyAgent):
         return message
 
     def _check_update_context(self, message):
+        print("SAEIDEH Modify Check Update Context for Agatha")
         if isinstance(message, dict):
             message = message.get("content", "")
         elif not isinstance(message, str):
